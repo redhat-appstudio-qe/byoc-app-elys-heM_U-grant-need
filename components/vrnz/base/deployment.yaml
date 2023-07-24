@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: vrnz
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-cxim-tenant/byoc-app-elys/vrnz@sha256:85b165c171e8eb115a1e88b742b4d5793c58e84fae76d6bfd65757e60543b53d
         name: my-java-quarkus
         ports:
         - containerPort: 8081
