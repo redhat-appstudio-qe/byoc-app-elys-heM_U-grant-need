@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: vrnz
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: vrnz
+    app.kubernetes.io/part-of: byoc-app-elys
+  name: vrnzlypw
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: vrnz
+    weight: null
+status: {}
